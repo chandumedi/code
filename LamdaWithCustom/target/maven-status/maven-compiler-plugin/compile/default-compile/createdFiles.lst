@@ -1,0 +1,3 @@
+com\amazonaws\lambda\ObjectDataHandler.class
+com\amazonaws\test\LamdaClientTest.class
+com\amazonaws\lambda\LambdaFunctionHandler.class

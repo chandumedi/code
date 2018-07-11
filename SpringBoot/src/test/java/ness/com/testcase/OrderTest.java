@@ -27,7 +27,6 @@ public class OrderTest {
 	private OrderItemDao orderItemDao;*/
 
 	@Test
-	@Transactional
 	public void testOrderItems() {
 		List<StoreItems> storeItems = new ArrayList<>();
 		storeItems.add(new StoreItems("S100", 7, 1200.80f, "APPLE"));

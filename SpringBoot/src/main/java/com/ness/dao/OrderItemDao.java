@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+import com.ness.bean.CustomerDetails;
 import com.ness.bean.StoreItems;
 
 @Repository
@@ -19,8 +20,18 @@ public class OrderItemDao {
 		return storeItems;
 	}
 
-	public void getCustomerDetails(String name) {
-		
+	public List<CustomerDetails> getCustomerDetails(CustomerDetails customerDetails) {
+		List<CustomerDetails> customerDetailsList=new ArrayList<>();				
+		customerDetailsList.add(new CustomerDetails("chandu", 100, "HYDERABAD"));
+		customerDetailsList.add(new CustomerDetails("ramesh", 100, "WARANGAL"));
+		customerDetailsList.add(new CustomerDetails("Krishna", 100, "NARSAMPET"));
+		customerDetailsList.add(new CustomerDetails("Sandhya", 100, "HYDERABAD"));
+		customerDetailsList.add(new CustomerDetails("chandu", 100, "HYDERABAD"));
+		customerDetailsList.add(new CustomerDetails("chandu", 100, "HYDERABAD"));
+		customerDetailsList.add(new CustomerDetails("chandu", 100, "HYDERABAD"));
+		customerDetailsList.add(new CustomerDetails("chandu", 100, "HYDERABAD"));
+		customerDetailsList.add(new CustomerDetails("chandu", 100, "HYDERABAD"));
+		return customerDetailsList;
 	}
 
 }

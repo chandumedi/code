@@ -3,11 +3,19 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ness.practice</groupId>
 	<artifactId>SpringBoot</artifactId>
-	<packaging>war</packaging>
+	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SpringBoot Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	<modules>
+		<module>BootDataAccess</module>
+	</modules>
 	<dependencies>
+		<dependency>
+			<groupId>com.ness.data</groupId>
+			<artifactId>BootDataAccess</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -58,6 +66,16 @@
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-core</artifactId>
 			<version>1.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.10-FINAL</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.10-FINAL</version>
 		</dependency>
 	</dependencies>
 	<build>
